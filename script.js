@@ -15,7 +15,7 @@ var squads = [
     
     {id: 1, 
     scores: [
-        false,
+        8,
         false,
         false,
         false,
@@ -28,7 +28,7 @@ var squads = [
     
     {id: 2, 
     scores: [
-        false,
+        0,
         false,
         false,
         false,
@@ -430,54 +430,94 @@ for(var i=0; i<squads.length; i++){
 
 var teams = [
     {
-        name: 'Don\'t Die for me Argentina',
-        owner: 'Alex Vance',
-        selected: [0,1,6,10,15,11,25,29]
+        name: 'Eskimos',
+        owner: 'Michael Childers',
+        selected: [4,6,8,9,19,24,28,30],
+        tb: 160
     },
     {
-        name: 'Brazilian Wax',
+        name: 'Messi Header',
         owner: 'Michael Beverage',
-        selected: [3,6,9,15,22,26,28,30]
+        selected: [0,1,9,14,16,17,24,29],
+        tb: 126
     },
     {
-        name: 'Denmark My Words',
-        owner: 'Cody Rohrig',
-        selected: [2,9,14,16,27,25,24,21]
+        name: 'Don\'t Messi With Me',
+        owner: 'Drew Linger',
+        selected: [0,9,12,13,19,21,22,28],
+        tb: 165
     },
     {
-        name: 'Don\'t Die for me Argentina',
+        name: 'Frankie Hejduk\'s Sponsor',
+        owner: 'Stephen Ruby',
+        selected: [3,4,11,13,14,16,21,30],
+        tb: 157
+    },
+    {
+        name: 'Not a Birdbath',
+        owner: 'David Boone',
+        selected: [0,2,9,14,16,19,20,27],
+        tb: 60
+    },
+    {
+        name: 'Not USA',
+        owner: 'Todd Perdue',
+        selected: [0,11,15,18,20,21,24,31],
+        tb: 180
+    },
+    {
+        name: 'Stars and Scrubs',
+        owner: 'Michael Beverage',
+        selected: [0,11,15,16,20,27,29,31],
+        tb: 110
+    },
+    {
+        name: 'Run Da Pitch',
+        owner: 'Matthew Randall',
+        selected: [1,6,9,12,19,21,26,31],
+        tb: 250
+    },
+    {
+        name: 'Soccer Mom',
+        owner: 'Erica Kitchen',
+        selected: [2,7,9,15,16,19,27,29],
+        tb: 135
+    },
+    {
+        name: 'Vive la Ona',
+        owner: 'Jared Brownfield',
+        selected: [0,4,7,10,11,13,14,21],
+        tb: 150
+    },
+    {
+        name: 'Clint Dempsey\'s 5 O\'Clock Shadow',
+        owner: 'Caleb Brownfield',
+        selected: [0,11,14,17,20,24,28,29],
+        tb: 165
+    },
+    {
+        name: 'Tommy Pickles F.C.',
+        owner: 'Tom Pickens',
+        selected: [4,8,9,14,20,23,24,25],
+        tb: 100
+    },
+    {
+        name: 'Eden Hazardous Picks',
         owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
+        selected: [0,5,10,14,18,24,25,27],
+        tb: 147
     },
     {
-        name: 'Don\'t Die for me Argentina',
+        name: 'Kylian \'Em Softly',
         owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
+        selected: [2,5,10,17,20,24,26,27],
+        tb: 144
     },
     {
-        name: 'Don\'t Die for me Argentina',
-        owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
-    },
-    {
-        name: 'Don\'t Die for me Argentina',
-        owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
-    },
-    {
-        name: 'Don\'t Die for me Argentina',
-        owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
-    },
-    {
-        name: 'Don\'t Die for me Argentina',
-        owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
-    },
-    {
-        name: 'Don\'t Die for me Argentina',
-        owner: 'Alex Vance',
-        selected: [4, 8, 12, 16, 20, 24, 28, 31]
+        name: 'Where is Michael Bradley???',
+        owner: 'Scott Hubay',
+        selected: [0,1,3,15,18,21,25,28],
+        tb: 430
     }
 ];
 
