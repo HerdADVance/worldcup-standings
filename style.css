@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+body {
+  line-height: 1; }
+ol, ul {
+  list-style: none; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #EEE;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+}
+
+.wrap{
+  margin: 0px auto;
+  padding: 40px 0;
+  width: 90%;
+}
+
+h1{
+  font-size: 36px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 20px auto;
+  user-select: none;
+  width: 100%;
+}
+tr{
+  background: #DDD;
+  cursor: pointer;
+}
+tr:nth-child(even){
+  background: #CCC;
+}
+tr.selected{
+  background: rgba(213,43,30,0.25);
+  cursor: not-allowed;
+}
+th{
+  background: white;
+  border: 1px solid #DDD;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+}
+th:first-child{
+  border-left: none;
+}
+th:last-child{
+  border-right: none;
+}
+td{
+  border: 1px solid #BBB;
+  font-size: 18px;
+  height: 50px;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+td:first-child{
+  border-left: none;
+}
+td:last-child{
+  border-right: none;
+}
+.team-name span{
+  display: block;
+}
+.team-name-name{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.team-name-owner{
+  font-size: 14px;
+}
+.squad-name{
+  font-size: 12px;
+}
+.squad-flag{
+  border: 0px solid #999;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px #000;
+  height: 45px;
+  margin: 8px 0 10px;
+  width: 45px;
+}
+.team-total{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+
