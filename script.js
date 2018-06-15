@@ -2,7 +2,7 @@ var squads = [
     
     {id: 0, 
     scores: [
-        false,
+        0,
         false,
         false,
         false,
@@ -41,7 +41,7 @@ var squads = [
     
     {id: 3, 
     scores: [
-        false,
+        4,
         false,
         false,
         false,
@@ -54,7 +54,7 @@ var squads = [
     
     {id: 4, 
     scores: [
-        false,
+        4,
         false,
         false,
         false,
@@ -67,7 +67,7 @@ var squads = [
     
     {id: 5, 
     scores: [
-        false,
+        0,
         false,
         false,
         false,
@@ -80,7 +80,7 @@ var squads = [
     
     {id: 6, 
     scores: [
-        false,
+        4,
         false,
         false,
         false,
@@ -93,7 +93,7 @@ var squads = [
     
     {id: 7, 
     scores: [
-        false,
+        4,
         false,
         false,
         false,
@@ -533,7 +533,7 @@ teams = teams.sort((a, b) => { return a.total < b.total; });
 
 
 /* Output Standings table*/
-var standings = '<table><tr><th>Team</th><th>Squad 1</th><th>Squad 2</th><th>Squad 3</th><th>Squad 4</th><th>Squad 5</th><th>Squad 6</th><th>Squad 7</th><th>Squad 8</th><th>Total</th></tr>';
+var standings = '<table id="standings" class="tablesorter"><thead><tr><th>Team</th><th>Squad 1</th><th>Squad 2</th><th>Squad 3</th><th>Squad 4</th><th>Squad 5</th><th>Squad 6</th><th>Squad 7</th><th>Squad 8</th><th>Total</th></tr></thead><tbody>';
 for(var i=0; i<teams.length; i++){
     standings += '<tr>';
         standings += '<td class="team-name">';
@@ -547,13 +547,31 @@ for(var i=0; i<teams.length; i++){
                 standings += '<img class="squad-flag" title="' + squads[teams[i].selected[j]].name + '" src="/images/' + squads[teams[i].selected[j]].url + '.svg">';
                 standings += '<br/>';
                 standings += '<span class="squad-total">' + squads[teams[i].selected[j]].total + '</span>';
+                standings += '<ul>';
+                    for(var k=0; k<7; k++){
+                        standings += '<li>';
+                            if(squads[teams[i].selected[j]].scores[k] !== false){
+                                standings += squads[teams[i].selected[j]].scores[k];
+                            }
+                            else{
+                                standings += '-';
+                            }
+                        standings += '</li>';
+                    }
+                standings += '</ul>';
             standings += '</td>';
         }
         standings += '<td class="team-total">' + teams[i].total + '</td>';
     standings += '</tr>';
 }
-standings += '</table>';
+standings += '</tbody></table>';
 
 
 
 $('.standings').html(standings);
+
+$(document).ready(function() 
+    { 
+        $("#standings").tablesorter( {sortList: [[9,1]]} ); 
+    } 
+); 
